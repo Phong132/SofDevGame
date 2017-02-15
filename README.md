@@ -15,5 +15,16 @@ Motivation:
 
 Risk:
 
+Mitigation Stratagy:
+
+User stories:
+
+Methodology:
+
+Project tracking software:
+
+Project plan:
+
+
 
 
