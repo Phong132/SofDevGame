@@ -1,6 +1,6 @@
 # SofDevGame
 who:
-Thomas Vu, Cristian Mendivil(CMendivil), Ryan Bravdica
+Thomas Vu, Cristian Mendivil(CMendivil), Ryan Bravdica, Nicholas Sugarman (shadowelecman)
 
 Title:
 2-d game
@@ -15,7 +15,7 @@ Motivation:
 For users/audience to have fun! 
 
 Risk:
-Some team member do not have experience at creating a game, 
+Some team members do not have experience at creating a game, 
 Time correlation, 
 Learning Unity
 
