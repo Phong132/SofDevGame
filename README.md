@@ -27,17 +27,17 @@ If we run into problems meet with the TAs
 
 User stories:
 
-Tom: I am a 13 year old who likes to play flash games on the internet to have fun.
+1.) I am a casual gamer who wants to be able to jump and shoot in games.
 
-Leslie: I am business woman who travels a lot and wants to kill time waiting for/during traveling.
+2.) I am a young gamer who wants the games I play to be colorful and easy to pick up so I can enjoy it quickly.
 
-Ann: I am an older woman who wants to exercise my mind to keep it sharp as I age.
+3.) I am an adult who wants to play something that stimulates my mind to keep me sharp.
 
-Ron: I am a middle aged man who wants a game that isn't time consuming to compete with my friends who are also very busy.
+4.) I am a teenager who wants to play games that I can be competitive with my friends.
 
-Andy: I am a casual gamer who is bored of simple platformers and wants something more engaging to keep me interested.
+5.) I am a child who wants to play games that have visual and audio queues so I can tell what I'm doing easily in the game.
 
-April: I am a middle aged woman who wants to find games that are easy to control so that I can connect with my daughter who likes games.
+6.) I am an elderly person who wants my game to have replay value so that I don't have to learn how to play new ones all over after I finish a game I like.
 
 Methodology:
 agile
