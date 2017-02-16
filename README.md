@@ -1,6 +1,6 @@
 # SofDevGame
 who:
-Thomas Vu, Cristian Mendivil(CMendivil), Ryan Bravdica, Chad Kessler (chke6852)
+Thomas Vu, Cristian Mendivil(CMendivil), Ryan Bravdica, Chad Kessler (chke6852), Nicholas Sugarman (shadowelecman)
 
 Title:
 2-d game
