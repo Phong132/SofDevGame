@@ -15,8 +15,8 @@ Motivation:
 For users/audience to have fun! 
 
 Risk:
-Some team member do not have experience at creating a game.
-Time correlation
+Some team member do not have experience at creating a game, 
+Time correlation, 
 Learning Unity
 
 Mitigation Stratagy:
