@@ -29,7 +29,7 @@ User stories:
 
 1.) I am a player who wants to be able to jump and shoot. (Priority: 1)
 
-2.) I am a player who wants to be able to see my current score. (Priority: 1 Time: 4)
+2.) I am a player who wants to be able to see my current score. (Priority: 2)
 
 3.) I am an player who wants my character to move quickly with the arrow keys. (Priority: 3)
 
