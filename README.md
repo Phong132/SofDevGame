@@ -27,17 +27,17 @@ If we run into problems meet with the TAs
 
 User stories:
 
-1.) I am a casual gamer who wants to be able to jump and shoot in games. (Priority: 1 Time: 4)
+1.) I am a player who wants to be able to jump and shoot. (Priority: 1)
 
-2.) I am a young gamer who wants the games I play to be colorful and easy to pick up so I can enjoy it quickly. (Priority: 3 Time: 6)
+2.) I am a player who wants to be able to see my current score. (Priority: 1 Time: 4)
 
-3.) I am an adult who wants to play something that stimulates my mind to keep me sharp. (Priority: 2 Time: 8)
+3.) I am an player who wants my character to move quickly with the arrow keys. (Priority: 3)
 
-4.) I am a teenager who wants to play games that I can be competitive with my friends. (Priority: 3 Time: 4)
+4.) I am a player who wants sound to play when my character performs an action. (Priority: 2)
 
-5.) I am a child who wants to play games that have visual and audio queues so I can tell what I'm doing easily in the game. (Priority: 2 Time: 5)
+5.) I am a player who wants to see how many lives I have left. (Priority: 3)
 
-6.) I am an elderly person who wants my game to have replay value so that I don't have to learn how to play new ones all over after I finish a game I like. (Priority: 4 Time: 3)
+6.) I am a player who wants to be able to pick up items with my character. (Priority: 4)
 
 Methodology:
 agile
