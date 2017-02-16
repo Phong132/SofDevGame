@@ -27,17 +27,17 @@ If we run into problems meet with the TAs
 
 User stories:
 
-1.) I am a player who wants to be able to jump and shoot. (Priority: 1)
+ID 1) I am a player who wants to be able to jump and shoot. (Priority: 1) (Agile sizing: 8)
 
-2.) I am a player who wants to be able to see my current score. (Priority: 2)
+ID 2) I am a player who wants to be able to see my current score. (Priority: 2) (Agile sizing: 2)
 
-3.) I am an player who wants my character to move quickly with the arrow keys. (Priority: 3)
+ID 3) I am an player who wants my character to move quickly with the arrow keys. (Priority: 3) (Agile sizing: 8)
 
-4.) I am a player who wants sound to play when my character performs an action. (Priority: 2)
+ID 4) I am a player who wants sound to play when my character performs an action. (Priority: 2) (Agile sizing: 4)
 
-5.) I am a player who wants to see how many lives I have left. (Priority: 3)
+ID 5) I am a player who wants to see how many lives I have left. (Priority: 3) (Agile sizing: 2)
 
-6.) I am a player who wants to be able to pick up items with my character. (Priority: 4)
+ID 6) I am a player who wants to be able to pick up items with my character. (Priority: 4) (Agile sizing: 16)
 
 Methodology:
 agile
