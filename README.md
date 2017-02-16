@@ -1,6 +1,6 @@
 # SofDevGame
 who:
-Thomas Vu
+Thomas Vu, Cristian Mendivil(CMendivil)
 
 Title:
 2-d game
