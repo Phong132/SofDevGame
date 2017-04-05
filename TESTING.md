@@ -32,42 +32,47 @@ Copy of at least three UAT plans
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 #Use Case Name: 
-
+  Avoid Death
 #Description: 
-
+  User must avoid dangerous landscapes and enemies 
 #Pre-conditions:
-
+  Users must know how to jump and move left and right
 #Test Steps:
-
+  1. User walks through stage.
+  2. User see's spike, enemy, or hole.
+  3. User avoids spike, hole, and enemy or kills enemy.
 #Expected Result:
-
+  User lives and can keep traversing through level.
 #Actual Result:
-
+  User undersatnds the concept of holes spikes and enemies and avoids them 
 #Status (Pass/Fail):
-
+  Pass
 #Notes:
-
+  N/A
 #Post-Conditions:
-
+  User beats level
 ----------------------------------------------------------------------------------------------------------------------------------------
 #Use Case Name: 
-
+  Gain points
 #Description: 
-
+  Users pick up coins to attain a higher score 
 #Pre-conditions:
-
+  Users must know how to jump and walk
 #Test Steps:
-
+  1. User walks through stage.
+  2. user see's coin.
+  3. user walks over coin.
+  4. Users see points increase.
 #Expected Result:
-
+  User walks over coin and notices score went up 100 points 
 #Actual Result:
-
+  User walks over coin and gets points.
 #Status (Pass/Fail):
-
+  Pass
 #Notes:
-
+  N/A
 #Post-Conditions:
-
+  Users keep getting coins thoughout playthrough. 
 ----------------------------------------------------------------------------------------------------------------------------------------
 #Use Case Name: 
 
