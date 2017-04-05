@@ -82,16 +82,16 @@ Copy of at least three UAT plans
   Users must know how to jump and walk
 #Test Steps:
   1. User walks right/left to an obstacle.
-  2. User should try to go through the obstacle..
-  3.User jump and land over the obstacle.
-#Expected Result:
-  User should not be able to go through an obstacle, and user should be able to land and stay on the obstacle.
-#Actual Result:
-  User cannot go through the obstacle, and user was able to land and stay on the obstacle.
-#Status (Pass/Fail):
-  Pass
-#Notes:
+  2. User should try to go through the obstacle.  
+  3. User jump and land over the obstacle.  
+#Expected Result:  
+  User should not be able to go through an obstacle, and user should be able to land and stay on the obstacle.  
+#Actual Result:  
+  User cannot go through the obstacle, and user was able to land and stay on the obstacle.  
+#Status (Pass/Fail):  
+  Pass  
+#Notes:  
   N/A
-#Post-Conditions:
-  User is able to interact with obstacles thoughout playthrough.
+#Post-Conditions:  
+  User is able to interact with obstacles thoughout playthrough.  
 
