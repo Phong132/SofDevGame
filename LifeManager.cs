@@ -15,11 +15,19 @@ public class LifeManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        theText.text = "x " + counter;
+        //if(counter >= 0) {
+            theText.text = "x " + counter;
+       // }
+        
 	}
 
     public void TakeLife()
     {
         counter--;
+    }
+
+    public int currentLives()
+    {
+        return counter;
     }
 }
