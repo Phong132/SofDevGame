@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour {
 
 	private bool doubleJumped = false;
 
-    private bool isDead = false;
+    private bool isDone = false;
 
 
 	// Use this for initialization
@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour {
 	}
 	// Update is called once per frame
 	void Update () {
-        if (isDead)
+        if (isDone)
             return;
 
 		if (grounded)
@@ -69,8 +69,8 @@ public class PlayerController : MonoBehaviour {
 		GetComponent<Rigidbody2D> ().velocity = new Vector2 (GetComponent<Rigidbody2D> ().velocity.x, jumpHeight);
 	}
 
-    public void onDeath()
+    public void Done()
     {
-        isDead = true;
+        isDone = true;
     }
 }

@@ -18,13 +18,7 @@ public class KillPlayer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (livesSystem.currentLives() == 0)
-        {
-            Debug.Log('0');
-            deathMenu.ToggleMenu();
-            control.onDeath();
-            livesSystem.TakeLife();
-        }
+        
     }
 
 	void OnTriggerEnter2D(Collider2D other)
@@ -32,7 +26,14 @@ public class KillPlayer : MonoBehaviour {
 		if (other.name == "Player") {
             livesSystem.TakeLife();
             levelManager.RespawnPlayer();
-            
-		}
+            if (livesSystem.currentLives() == 0)
+            {
+                Debug.Log('0');
+                deathMenu.ToggleMenu();
+                control.Done();
+            }
+
+        }
+
 	}
 }
