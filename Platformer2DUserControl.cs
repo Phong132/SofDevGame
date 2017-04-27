@@ -1,3 +1,6 @@
+//This is the script used for the original robot character for simple user controls.
+//It is not the script used in the end game made by Tom
+
 using System;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
