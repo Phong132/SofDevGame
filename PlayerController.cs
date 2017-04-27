@@ -13,9 +13,9 @@ public class PlayerController : MonoBehaviour {
 	public LayerMask whatIsGround;
 	private bool grounded;
 
-	private bool doubleJumped;
+	private bool doubleJumped = false;
 
-
+    private bool isDone = false;
 
 
 	// Use this for initialization
@@ -28,6 +28,8 @@ public class PlayerController : MonoBehaviour {
 	}
 	// Update is called once per frame
 	void Update () {
+        if (isDone)
+            return;
 
 		if (grounded)
 			doubleJumped = false;
@@ -66,4 +68,9 @@ public class PlayerController : MonoBehaviour {
 	{
 		GetComponent<Rigidbody2D> ().velocity = new Vector2 (GetComponent<Rigidbody2D> ().velocity.x, jumpHeight);
 	}
+
+    public void Done()
+    {
+        isDone = true;
+    }
 }
