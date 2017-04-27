@@ -1,3 +1,5 @@
+//This is the basic sample script used when we were learning unity and had a robot character as a sample to get started
+//It is not the script used in the end game character
 using System;
 using UnityEngine;
 
