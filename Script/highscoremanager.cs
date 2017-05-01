@@ -4,6 +4,7 @@ using UnityEngine;
 using System;
 using System.Data;
 using Mono.Data.Sqlite;
+using UnityEngine.UI;
 
 public class highscoremanager : MonoBehaviour {
     //special thanks to inScope Studios for all the help with creating this database
@@ -14,20 +15,37 @@ public class highscoremanager : MonoBehaviour {
     public GameObject scorePrefab;
     public Transform scoreParent;
     public int topTen;
+    public InputField entername;
+    public GameObject nameDialog;
 
 	// Use this for initialization
 	void Start ()
     {
         connectString = "URI=file:" + Application.dataPath + "/highscore.sqlite";
-
+        if (PlayerPrefs.GetInt("CurrentScore") == 0)
+        {
+            nameDialog.SetActive(!nameDialog.activeSelf);
+        }
         getScores();
         showScores();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+        
+    }
+
+    public void enterName()
+    {
+        if (entername.text != string.Empty)
+        {
+            int score = PlayerPrefs.GetInt("CurrentScore");
+            putScores(entername.text, score);
+            entername.text = string.Empty;
+            nameDialog.SetActive(!nameDialog.activeSelf);
+            showScores();
+        }
+    }
 
     private void putScores(string name, int score)
     {
@@ -36,7 +54,7 @@ public class highscoremanager : MonoBehaviour {
             datab.Open();
             using (IDbCommand databcmd = datab.CreateCommand())
             {
-                string squery = String.Format("INSERT INTO scores(Name, Score, Date) VALUES(\"{0}\",\"{1}\")",name,score);
+                string squery = String.Format("INSERT INTO scores(Name, Score) VALUES(\"{0}\",\"{1}\")",name,score);
                 databcmd.CommandText = squery;
                 databcmd.ExecuteScalar();
                 datab.Close();
@@ -85,6 +103,13 @@ public class highscoremanager : MonoBehaviour {
     
     private void showScores()
     {
+        getScores();
+      
+        foreach(GameObject gameScores in GameObject.FindGameObjectsWithTag("score"))
+        {
+            Destroy(gameScores);
+        }
+
         for (int i=0; i < topTen; i++)
         {
             if (i <= allScores.Count - 1)
