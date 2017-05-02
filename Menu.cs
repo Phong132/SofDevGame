@@ -2,10 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Menu : MonoBehaviour {
+public class Menu : MonoBehaviour
+{
+    public int playerLives;
 
-	public void LoadScene(string name)
+    public int startScore;
+
+    public void LoadScene(string name)
     {
         Application.LoadLevel(name);
+
+        PlayerPrefs.SetInt("PlayerCurrentLives", playerLives);
+
+        PlayerPrefs.SetInt("CurrentScore", startScore);
+    }
+
+    public void Exit()
+    {
+        Application.Quit();
     }
 }

@@ -4,8 +4,12 @@ using UnityEngine.SceneManagement;
 
 public class DeathMenu : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+    //public int playerLives = 3;
+
+    public int resetScore = 0;
+
+    // Use this for initialization
+    void Start () {
         gameObject.SetActive(false);
 	}
 	
@@ -23,6 +27,13 @@ public class DeathMenu : MonoBehaviour {
     public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
+        //when player dies and restarts, lives are reset to 3
+        PlayerPrefs.SetInt("PlayerCurrentLives", 3);
+
+        //when player dies and restarts, score is set to 0
+        PlayerPrefs.SetInt("CurrentScore", resetScore);
+
     }
 
     public void MainMenu()
