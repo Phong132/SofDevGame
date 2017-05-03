@@ -50,3 +50,12 @@ Project plan:
 https://trello.com/sofdevteam
 
 
+
+
+
+
+Repository Description:
+
+All important scripts are uploaded into the master branch. The auto-doc files are uploaded in their own folder.
+They can be downloaded and opened as html documents. Running the game requires downloading the "game.zip" file and extracting
+it to a folder, then running the exe file. Testing and building is all done via Unity.
