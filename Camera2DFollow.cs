@@ -5,6 +5,7 @@ namespace UnityStandardAssets._2D
 {
     public class Camera2DFollow : MonoBehaviour
     {
+        //here is where we decide on how much the camera looks ahead/how fast it moves
         public Transform target;
         public float damping = 1;
         public float lookAheadFactor = 3;
@@ -31,6 +32,7 @@ namespace UnityStandardAssets._2D
             // only update lookahead pos if accelerating or changed direction
             float xMoveDelta = (target.position - m_LastTargetPosition).x;
 
+            //Here is where the amount the camer looks ahead is decided/controlled
             bool updateLookAheadTarget = Mathf.Abs(xMoveDelta) > lookAheadMoveThreshold;
 
             if (updateLookAheadTarget)
