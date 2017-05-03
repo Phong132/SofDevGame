@@ -12,15 +12,16 @@ public class Checkpoint : MonoBehaviour {
 		levelManager = FindObjectOfType<LevelManager> ();
 	}
 	
-	// Update is called once per frame
+	
 	void Update () {
-		
+	// Update is called once per frame this way when the player moves into a checkpoint it'll update the checkpoint. A real time checker. 	
 	}
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		if (other.name == "Player") {
 			levelManager.currentCeckpoint = gameObject;
 			Debug.Log ("Activated Checkpoint " + transform.position);
+		// if player is at a new checkpoint it'll log that checkpoint as the current checkpoint  
 		}
 	}
 }
