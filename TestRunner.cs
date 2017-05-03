@@ -275,7 +275,7 @@ namespace UnityTest
             else
                 Debug.Log(message);
         }
-
+        //stop test
         private void FinishTestRun()
         {
             PrintResultToLog();
@@ -333,7 +333,7 @@ namespace UnityTest
         {
             k_ResultRenderer.Draw();
         }
-
+        //beginning of new test
         private void StartNewTest()
         {
             m_TestMessages = "";
