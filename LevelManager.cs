@@ -25,8 +25,14 @@ public class LevelManager : MonoBehaviour {
 	public void RespawnPlayer()
 	{
 		Debug.Log ("Player Respawn"); 
+		
+		//respawn at last checkpoint
 		player.transform.position = currentCeckpoint.transform.position;
+		
+		//sets physics
 		player.GetComponent<Rigidbody2D> ().velocity = Vector2.zero;
+		
+		//take away points for death
 		ScoreManager.AddPoints (-pointPenaltyOnDeath);
 
 
