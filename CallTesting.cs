@@ -8,6 +8,7 @@ namespace UnityTest
     {
         public enum Functions
         {
+            //This is where the unity testing asset can choose from any of these options to choose what to do
             CallAfterSeconds,
             CallAfterFrames,
             Start,
@@ -41,7 +42,7 @@ namespace UnityTest
             Pass,
             Fail
         }
-
+        //used for starting testing after x frames
         public int afterFrames = 0;
         public float afterSeconds = 0.0f;
         public Functions callOnMethod = Functions.Start;
@@ -49,7 +50,7 @@ namespace UnityTest
         public Method methodToCall;
         private int m_StartFrame;
         private float m_StartTime;
-
+        //testing calls
         private void TryToCallTesting(Functions invokingMethod)
         {
             if (invokingMethod == callOnMethod)
@@ -65,7 +66,8 @@ namespace UnityTest
                 m_StartFrame = int.MinValue;
             }
         }
-
+        //these are all properties of the different testing options
+        //we will be using on collision
         public void Start()
         {
             m_StartTime = Time.time;
