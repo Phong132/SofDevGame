@@ -25,12 +25,15 @@ public class KillPlayer : MonoBehaviour {
 	{
 		if (other.name == "Player") {
             livesSystem.TakeLife();
+	// if the player triggers the hit box of the spike it'll take away a life from the player 
             levelManager.RespawnPlayer();
+ 	// after they die it'll respawn player into the last checkpoint touched 
             if (livesSystem.currentLives() == 0)
             {
                 Debug.Log('0');
                 deathMenu.ToggleMenu();
                 control.Done();
+		// If lives go to zero the death menu will pop up
             }
 
         }
