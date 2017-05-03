@@ -12,7 +12,9 @@ public class CoinPickup : MonoBehaviour {
 			return;
 
 		ScoreManager.AddPoints (pointsToAdd);
+		// will add points to the score manager 
 
 		Destroy (gameObject);
+		//Once the player collects the coin, it'll dissappear 
 	}
 }
