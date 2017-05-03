@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//This script is used by the exit doors in the game to go to the next level.
 public class Exit : MonoBehaviour {
     private bool playerInZone;
     public string Level;
@@ -20,6 +21,8 @@ public class Exit : MonoBehaviour {
         }
 	}
 
+	
+	//change Bool if your are in the door
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.name == "Player")
@@ -28,7 +31,7 @@ public class Exit : MonoBehaviour {
             playerInZone = true;
         }
     }
-
+//change Bool if your are out of the door
     void OnTriggerExit2D(Collider2D other)
     {
         Debug.Log("Out");
