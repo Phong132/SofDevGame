@@ -1,10 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
+//Script used in the death Menu.
 public class DeathMenu : MonoBehaviour {
-
-    //public int playerLives = 3;
 
     public int resetScore = 0;
 
@@ -13,11 +11,8 @@ public class DeathMenu : MonoBehaviour {
         gameObject.SetActive(false);
 	}
 	
-	// Update is called once per frame
-	void Update () {
 
-    }
-
+//activate the death menu
     public void ToggleMenu()
     {
         gameObject.SetActive(true);
