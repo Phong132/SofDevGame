@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+//this just helps make a high score object we can use
 public class highScoreScript : MonoBehaviour
 {
 
