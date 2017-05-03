@@ -22,6 +22,7 @@ public class highscoremanager : MonoBehaviour {
 	void Start ()
     {
         connectString = "URI=file:" + Application.dataPath + "/highscore.sqlite";
+        makeTable();
         if (PlayerPrefs.GetInt("CurrentScore") == 0)
         {
             nameDialog.SetActive(!nameDialog.activeSelf);
@@ -33,6 +34,22 @@ public class highscoremanager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         
+    }
+
+    private void makeTable()
+    {
+        using (IDbConnection datab = new SqliteConnection(connectString))
+        {
+            datab.Open();
+            using (IDbCommand databcmd = datab.CreateCommand())
+            {
+                string squery = String.Format("CREATE TABLE if not exists scores (Player INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE, Name TEXT NOT NULL, Score INTEGER NOT NULL)");
+               
+                databcmd.CommandText = squery;
+                databcmd.ExecuteScalar();
+                datab.Close();
+            }
+        }
     }
 
     public void enterName()
